@@ -1,0 +1,59 @@
+.partner {
+    background: #203260;
+    .title-xl {
+        color: #fff;
+    }
+    .text-simple {
+        color: #fff;
+        opacity: .8;
+    }
+}
+
+.partner-container {
+    padding: 60px 0;
+    @media (max-width: 990px) {
+        padding: 30px 0;
+    }
+}
+
+.part-desk {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    a {
+        margin: 0 10px;
+        opacity: .8;
+        transition: .4s;
+        &:hover {
+            opacity: 1;
+            transform: scale(1.1);
+        }
+    }
+    @media (max-width: 576px) {
+        display: none;
+    }
+}
+
+.part-mob {
+    display: none;
+    @media (max-width: 576px) {
+        display: block;
+    }
+    a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .slick-dots {
+        bottom: -40px;
+    }
+    .slick-dots li button:before {
+        color: #fff;
+        font-size: 2rem;
+        opacity: .6;
+    }
+    .slick-dots li.slick-active button:before {
+        color: #fff;
+        opacity: 1;
+    }
+}

@@ -1,0 +1,18 @@
+.about-us-wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px;
+    @media (max-width: 990px) {
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+        width: 100%;
+        box-sizing: border-box;
+        display: block;
+        margin: 0 auto;
+        border: 5px solid #8d92c4;
+    }
+}

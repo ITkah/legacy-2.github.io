@@ -1,0 +1,28 @@
+.btn-blue {
+    color: #fff;
+    background: #005aab;
+    font: 500 1rem 'Roboto', sans-serif;
+    outline: none;
+    border: none;
+    padding: 8px 30px;
+    transition: .3s;
+    border-radius: 5px;
+    box-sizing: border-box;
+    cursor: pointer;
+    &:hover {
+        background: #2d7dce;
+    }
+}
+
+.btn-gold {
+    background:#ffc000;
+    color: #005aab;
+    font: bold 1.25rem 'Roboto', sans-serif;
+    outline: none;
+    text-transform: uppercase;
+    border: none;
+    padding: 8px 30px;
+    transition: .3s;
+    border-radius: 5px;
+    cursor: pointer;
+}

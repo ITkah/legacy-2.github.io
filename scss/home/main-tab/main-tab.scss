@@ -1,0 +1,98 @@
+.tabs__content {
+    display: none; 
+}
+
+.tabs__content.active {
+    display: block; 
+}
+
+.main-tab {
+    .tabs__caption {
+        margin-bottom: 40px;
+        display: flex;
+        @media (max-width: 768px) {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: 20px;
+        }
+        li {
+            cursor: pointer;
+            margin-right: 20px;
+            background: #ffc000;
+            color: #000;
+            font: 300 1.25rem 'Roboto', sans-serif;
+            outline: none;
+            text-transform: uppercase;
+            border: none;
+            transition: .3s;
+            padding: 10px 35px;
+            text-align: center;
+            @media (max-width: 768px) {
+                margin: 0;
+                font-size: 1rem;
+                padding: 10px 25px;
+            }
+            &:hover {
+                color: #fff;
+            }
+        }
+        .active {
+            background: #000;
+            color: #fff;
+        }
+    }
+}
+
+.tab-wrap {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 60px;
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+    }
+    .img {
+        height: auto;
+        max-width: 100%;
+        object-fit: cover;
+        border: 5px solid #8d92c4;
+        @media (max-width: 768px) {
+            width: 100%;
+            box-sizing: border-box;
+        }
+    }
+    .tab-info {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        .tab-title-box {
+            display: flex;
+            img {
+                height: 30px;
+                margin-right: 10px;
+            }
+        }
+        p {
+            margin-bottom: 20px;
+        }
+        a {
+            position: relative;
+            padding: 8px 35px 8px 15px;
+            @media (max-width: 576px) {
+                display: block;
+                width: 100%;
+                text-align: center;
+            }
+            &::before {
+                content: '\f30b';
+                font-family: 'Font Awesome 5 Free', 'Font Awesome 5 Brands';
+                font-weight: 700;
+                display: block;
+                position: absolute;
+                color: #ffc000;
+                right: 10px;
+                top: 10px;
+            }
+        }
+    }
+}

@@ -1,0 +1,19 @@
+.contact-us {
+    background: url(../img/main-slider/slid-bg-1.png) no-repeat center center fixed;
+}
+
+.contact-us-container {
+    padding: 60px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    .title-sm {
+        color: #fff;
+        font-size: 2rem;
+        @media (max-width: 990px) {
+            font-size: 1.5rem;
+        }
+    }
+}
