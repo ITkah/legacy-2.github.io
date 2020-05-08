@@ -197,17 +197,23 @@ nav {
     nav ul li:first-child {
       padding-left: 0; }
     nav ul li:nth-child(2)::after {
-      content: url(../img/icon/down.png);
+      content: "\f103";
+      color: #fff;
+      font-family: 'Font Awesome 5 Free', 'Font Awesome 5 Brands';
+      font-weight: 700;
       position: absolute;
-      right: -3px;
+      right: 0;
       top: 38%; }
       @media (max-width: 990px) {
         nav ul li:nth-child(2)::after {
           display: none; } }
     nav ul li:nth-child(3)::after {
-      content: url(../img/icon/down.png);
+      content: "\f103";
+      color: #fff;
+      font-family: 'Font Awesome 5 Free', 'Font Awesome 5 Brands';
+      font-weight: 700;
       position: absolute;
-      right: -3px;
+      right: 0;
       top: 38%; }
       @media (max-width: 990px) {
         nav ul li:nth-child(3)::after {
@@ -228,11 +234,10 @@ nav {
         -o-transition: .3s;
         transition: .3s;
         position: relative;
-        font: bold .9rem 'Roboto', sans-serif; }
+        font: 500 1rem 'Roboto', sans-serif; }
         @media (max-width: 990px) {
           nav ul li a {
             padding: 0;
-            font: 500 1rem 'Roboto', sans-serif;
             color: #000; } }
         nav ul li a:hover::before {
           -webkit-transform: translateX(0px);
@@ -433,7 +438,7 @@ nav {
   .company-container img {
     max-width: 100%;
     height: auto;
-    border: 5px solid #8d92c4; }
+    border: 5px solid #b4b4b4; }
     @media (max-width: 990px) {
       .company-container img {
         display: block;
@@ -455,7 +460,7 @@ nav {
   .product-container img {
     max-width: 100%;
     height: auto;
-    border: 5px solid #8d92c4;
+    border: 5px solid #b4b4b4;
     margin: 0 auto;
     margin-bottom: 15px;
     display: block; }
@@ -569,8 +574,8 @@ nav {
   .main-tab .tabs__caption li {
     cursor: pointer;
     margin-right: 20px;
-    background: #ffc000;
-    color: #000;
+    background: #000;
+    color: #fff;
     font: 300 1.25rem 'Roboto', sans-serif;
     outline: none;
     text-transform: uppercase;
@@ -586,10 +591,11 @@ nav {
         font-size: 1rem;
         padding: 10px 25px; } }
     .main-tab .tabs__caption li:hover {
-      color: #fff; }
+      color: #fff;
+      background: #ffc000; }
   .main-tab .tabs__caption .active {
-    background: #000;
-    color: #fff; }
+    background: #ffc000;
+    color: #000; }
 
 .tab-wrap {
   display: grid;
@@ -604,7 +610,7 @@ nav {
     max-width: 100%;
     -o-object-fit: cover;
        object-fit: cover;
-    border: 5px solid #8d92c4; }
+    border: 5px solid #b4b4b4; }
     @media (max-width: 768px) {
       .tab-wrap .img {
         width: 100%;
@@ -862,7 +868,7 @@ nav {
             box-sizing: border-box;
     display: block;
     margin: 0 auto;
-    border: 5px solid #8d92c4; }
+    border: 5px solid #b4b4b4; }
 
 .contact-map iframe {
   width: 100%;

@@ -176,9 +176,12 @@ nav {
         }
         li:nth-child(2) {
             &::after {
-                content: url(../img/icon/down.png);
+                content: "\f103";
+                color: #fff;
+                font-family: 'Font Awesome 5 Free', 'Font Awesome 5 Brands';
+                font-weight: 700;
                 position: absolute;
-                right: -3px;
+                right: 0;
                 top: 38%;
                 @media (max-width: 990px) {
                     display: none;
@@ -187,9 +190,12 @@ nav {
         }
         li:nth-child(3) {
             &::after {
-                content: url(../img/icon/down.png);
+                content: "\f103";
+                color: #fff;
+                font-family: 'Font Awesome 5 Free', 'Font Awesome 5 Brands';
+                font-weight: 700;
                 position: absolute;
-                right: -3px;
+                right: 0;
                 top: 38%;
                 @media (max-width: 990px) {
                     display: none;
@@ -213,10 +219,9 @@ nav {
                 text-transform: uppercase;
                 transition: .3s;
                 position: relative;
-                font: bold .9rem 'Roboto', sans-serif;
+                font: 500 1rem 'Roboto', sans-serif;
                 @media (max-width: 990px) {
                     padding:0;
-                    font: 500 1rem 'Roboto', sans-serif;
                     color: #000;
                 }
                 &:hover {
