@@ -12,7 +12,7 @@ $(document).ready(function() {
     });
 
     $(window).scroll(function() {
-        if ($(this).scrollTop() > 110) {
+        if ($(this).scrollTop() > 97) {
             $('nav').addClass("fixed-header");
         } else {
             $('nav').removeClass("fixed-header");

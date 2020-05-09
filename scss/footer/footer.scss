@@ -1,15 +1,60 @@
 footer {
-    background: #171f35;
+    background: #fff;
+    border-top: 4px solid #000;
     .container {
         padding-bottom: 25px;
+    }
+    .btn-blue {
+        color: #fff;
+        width: 120px;
+        position: relative;
+        &::before {
+            content: '\f30b';
+            font-family: 'Font Awesome 5 Free', 'Font Awesome 5 Brands';
+            font-weight: 700;
+            display: block;
+            position: absolute;
+            color: #ffc000;
+            right: 10px;
+            top: 12px;
+        }
+    }
+    .footer-logo-item {
+        display: flex;
+        margin-bottom: 25px;
+        align-items: center;
+        i {
+            font-size: 20px;
+            margin-right: 10px;
+            width: 20px;
+        }
+        p {
+            font: 500 1rem 'Muli', sans-serif; 
+        }
+    }
+    .copy {
+        font: 500 1rem 'Muli', sans-serif; 
+        margin: 20px 0;
+    }
+}
+
+.footer-social {
+    display: flex;
+    align-items: center;
+    a {
+        i {
+            font-size: 20px;
+            color: #005aab;
+        }
+        margin-right: 20px;
     }
 }
 
 .footer-container {
     padding:60px 0 25px 0;
     display: grid;
-    grid-template-columns: 2fr 2fr 2fr 3fr;
-    grid-gap: 30px;
+    grid-template-columns: 2fr 3fr 3fr 2fr;
+    grid-gap: 50px;
     @media (max-width: 768px) {
         padding: 25px 0;
         grid-template-columns: 1fr;
@@ -21,35 +66,33 @@ footer {
     }
     .footer-logo-box {
         img {
-            margin-bottom: 10px;
+            margin-bottom: 20px;
         }
     }
     .footer-text {
-        color: #fff;
-        opacity: .6;
-        margin-bottom: 10px;
+        color: #000;
+        margin-bottom: 20px;
         display: block;
-        font: 500 1rem 'Muli', sans-serif; 
+        font: 500 1.1rem/26px 'Muli', sans-serif; 
         @media (max-width: 768px) {
             font-size: 1rem;
         }
     }
     .footer-title {
         margin-bottom: 25px;
-        font: 500 1.5rem 'Muli', sans-serif; 
-        color: #fff;
+        font: 600 1.125rem 'Muli', sans-serif; 
+        color: #000;
         @media (max-width: 768px) {
             margin-bottom: 15px;
             font-size: 1.25rem;
         }
     }
-    .footer-link,a {
-        opacity: .6;
+    .footer-link {
         display: block;
-        color: #fff;
+        color: #000;
         margin-bottom: 15px;
         transition: .3s;
-        font: 500 1.125rem 'Muli', sans-serif; 
+        font: 600 1.125rem 'Muli', sans-serif; 
         @media (max-width: 768px) {
             font-size: 1.1rem;
         }
@@ -64,12 +107,32 @@ footer {
 
 }
 
+.footer-box-link {
+    ul {
+        a {
+            border-bottom: 1px solid rgb(185, 185, 185);
+            padding: 10px;
+            margin: 0;
+            display: block;
+            color: #000;
+            transition: .3s;
+            font: 600 1.1rem 'Muli', sans-serif; 
+            @media (max-width: 768px) {
+                font-size: 1.1rem;
+            }
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+}
+
 .footer-privat {
     display: flex;
     align-items: center;
     justify-content: center;
     p {
-        color: #fff;
+        color: #000;
         opacity: .6;
         display: block;
         font: 500 1rem 'Muli', sans-serif; 

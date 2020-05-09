@@ -41,7 +41,7 @@
         justify-content: center;
         a {
             position: relative;
-            padding: 8px 35px 8px 15px;
+            padding: 10px 45px 10px 20px;
             @media (max-width: 576px) {
                 display: block;
                 width: 100%;
@@ -55,7 +55,7 @@
                 position: absolute;
                 color: #ffc000;
                 right: 10px;
-                top: 10px;
+                top: 11.5px;
             }
         }
     }
